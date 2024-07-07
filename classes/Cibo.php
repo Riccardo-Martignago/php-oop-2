@@ -9,6 +9,6 @@ class Cibo extends Prodotto{
     }
 
     public function getPeso(){
-        return $this->$peso;
+        return $this->peso;
     }
 };

@@ -9,6 +9,6 @@ class Accessorio extends Prodotto{
     }
 
     public function getMateriale(){
-        return $this->$materiale;
+        return $this->materiale;
     }
 };

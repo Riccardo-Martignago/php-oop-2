@@ -9,6 +9,6 @@ class Gioco extends Prodotto{
     }
 
     public function getDimensione(){
-        return $this->$dimensione; 
+        return $this->dimensione; 
     }
 };

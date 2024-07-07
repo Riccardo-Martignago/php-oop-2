@@ -40,19 +40,19 @@
                 <p class="card-text">Prezzo:<?php echo $prodotto->getPrezzo();?> euro</p>
 
                 <?php if (get_class($prodotto) === "Accessorio") { ?>
-                    <p class="px-2" ><?php echo $prodotto->getMateriale() ?></p>
+                    <p class="px-2" >Materiale: <?php echo $prodotto->getMateriale(); ?></p>
                 <?php }?>
 
                 <?php if (get_class($prodotto) === "Cibo") { ?>
-                    <p class="px-2" > <?php echo $prodotto->getPeso() ?></p>
+                    <p class="px-2" >Peso: <?php echo $prodotto->getPeso(); ?> kg</p>
                 <?php }?>
 
                 <?php if (get_class($prodotto) === "Gioco") { ?>
-                    <p class="px-2" > <?php echo $prodotto->getDimensioni() ?></p>
+                    <p class="px-2" >Dimensioni: <?php echo $prodotto->getDimensione(); ?> cm</p>
                 <?php }?>
             </div>
         </article>
-        <?php } ?>
+        <?php }; ?>
     </main>
 </body>
 </html>
